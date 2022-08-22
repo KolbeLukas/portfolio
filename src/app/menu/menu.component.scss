@@ -7,6 +7,15 @@ header {
     justify-content: center;
     height: 80px;
     background-color: #000000;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding-inline: 24px;
 
     img {
         height: 35px;
@@ -17,13 +26,4 @@ header {
         text-decoration: none;
         margin-left: 40px;
     }
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    padding-inline: 24px;
 }
