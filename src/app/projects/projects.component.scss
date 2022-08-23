@@ -23,33 +23,44 @@ h2 {
         color: #ffffff;
         border: 1px solid #FA2759;
         cursor: pointer;
-        transition: background-color 25ms ease-in-out;
+        transition: background-color 50ms ease-in-out;
 
         &:hover {
             background-color: #FA2759;
         }
+    }
+
+    .active {
+        background-color: #FA2759;
     }
 }
 
 .content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
     margin-bottom: 57.5px;
 
     .box {
-        background-image: url('/assets/img/laptop.png');
+        background-image: url('/assets/img/project1.png');
         background-size: cover;
-        width: 330px;
+        background-position: center;
+        width: 350px;
         height: 300px;
         margin: 20px;
         border-radius: 2px;
     }
 
     .box:nth-child(2) {
-        background-image: url('/assets/img/laptop2.png');
+        background-image: url('/assets/img/project2.png');
     }
+
+    .box:nth-child(3) {
+        background-image: url('/assets/img/project3.jpg');
+    }
+
 
     .overlay {
         width: 100%;
@@ -62,7 +73,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
         opacity: 0;
-        transition: all 50ms ease-in-out;
+        transition: all 125ms ease-in-out;
 
         &:hover {
             opacity: 1;
@@ -70,6 +81,10 @@ h2 {
 
         h3 {
             color: #FA2759;
+        }
+
+        span {
+            text-align: center;
         }
 
         a {
@@ -82,8 +97,9 @@ h2 {
             background-color: #ffffff;
             color: #FA2759;
             border: 1px solid #FA2759;
+            text-decoration: none;
             cursor: pointer;
-            transition: all 25ms ease-in-out;
+            transition: all 50ms ease-in-out;
 
             &:hover {
                 background-color: #FA2759;

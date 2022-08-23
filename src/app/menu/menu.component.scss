@@ -22,5 +22,9 @@ header {
         color: #ffffff;
         text-decoration: none;
         margin-left: 40px;
+
+        &:hover {
+            color: #FA2759;
+        }
     }
 }
