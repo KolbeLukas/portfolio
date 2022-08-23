@@ -17,6 +17,7 @@
 
     h1 {
         color: #ffffff;
+        margin-bottom: 80px;
 
         .name {
             color: #FA2759;
@@ -27,19 +28,19 @@
         }
     }
 
-    button {
-        margin-top: 60px;
+    a {
         margin-left: 12px;
         background-color: #000000;
         color: #2DFCD8;
         border: 1px solid #2DFCD8;
         padding: 20px 70px;
         cursor: pointer;
+        text-decoration: none;
         transition: background-color 50ms ease-in-out;
 
         &:hover {
             background-color: #2DFCD8;
-            color: #ffffff;
+            color: black;
         }
     }
 
