@@ -7,7 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { AbouteComponent } from './aboute/aboute.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { AbouteComponent } from './aboute/aboute.component';
     LandingPageComponent,
     SkillsComponent,
     ProjectsComponent,
-    AbouteComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
