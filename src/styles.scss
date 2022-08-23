@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding: 80px;
 }
 
 body {
@@ -18,10 +17,15 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
 p {
     font-size: 18px;
 }
 
-span {
-    font-size: 18px;
+.d-none {
+    display: none !important;
 }

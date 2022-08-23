@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     LandingPageComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
