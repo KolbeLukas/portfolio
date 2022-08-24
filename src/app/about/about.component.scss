@@ -85,3 +85,35 @@ p {
         }
     }
 }
+
+@media (max-width: 750px) {
+    .top-half {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: unset;
+        padding-bottom: unset;
+
+        .img-box {
+            justify-content: center;
+            padding-right: unset;
+        }
+
+        h2 {
+            padding-top: 40px;
+        }
+
+        .text-box {
+            padding-right: unset;
+            width: unset;
+            padding-inline: 20px;
+        }
+    }
+
+    .bottom-half {
+
+        .box {
+            width: 70%;
+            padding-top: 10px;
+        }
+    }
+}

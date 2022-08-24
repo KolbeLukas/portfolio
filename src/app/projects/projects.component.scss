@@ -13,12 +13,16 @@ h2 {
 }
 
 .nav {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     button {
         width: 100px;
         height: 50px;
         margin-inline: 4px;
+        margin-bottom: 8px;
         background-color: #000000;
         color: #ffffff;
         border: 1px solid #FA2759;
@@ -110,6 +114,14 @@ h2 {
                 background-color: #FA2759;
                 color: #ffffff;
             }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .content {
+        .box {
+            height: 250px;
         }
     }
 }

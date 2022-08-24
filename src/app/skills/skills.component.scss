@@ -20,8 +20,8 @@ h2 {
 }
 
 .box {
-    width: 200px;
-    height: 150px;
+    width: calc(33% - 40px);
+    height: 130px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -32,21 +32,67 @@ h2 {
     margin-bottom: 77.5px;
 
     div {
-       position: absolute;
-       display: flex;
-       padding: 20px;
-       border-radius: 100%;
-       margin-top: -150px;
-       background-color: #ffffff;
-       box-shadow: 0px 0px 4px 0px #00000033;
+        position: absolute;
+        display: flex;
+        padding: 20px;
+        border-radius: 100%;
+        margin-top: -130px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 4px 0px #00000033;
 
-       img {
-        height: 35px;
-        width: 35px;
-       }
+        img {
+            height: 35px;
+            width: 35px;
+        }
     }
 
     span {
         font-size: 18px;
-       }
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .box {
+        width: calc(33% - 20px);
+        height: 100px;
+        margin-inline: 10px;
+        margin-bottom: 60px;
+
+        div {
+            margin-top: -100px;
+            padding: 15px;
+
+            img {
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .box {
+        width: calc(33% - 10px);
+        height: 80px;
+        margin-inline: 5px;
+        margin-bottom: 60px;
+
+        div {
+            padding: 12px;
+
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .box {
+        span {
+            font-size: 16px;
+        }
+    }
 }

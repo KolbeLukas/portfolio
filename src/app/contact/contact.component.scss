@@ -7,10 +7,9 @@
 }
 
 .content {
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 500px;
-    padding-top: 80px;
-    padding-bottom: 70px;
+    padding: 80px 20px;
 
     h2 {
         color: #2DFCD8;
