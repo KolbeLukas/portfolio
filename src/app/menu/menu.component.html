@@ -1,11 +1,12 @@
 <header>
     <div class="content">
-        <img routerLink="/" src="assets/img/logo_white.png" alt="logo in white color">
-        <div>
-            <a routerLink="/" class="active">HOME</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#about">ABOUT</a>
+        <img class="logo" routerLink="/" src="assets/img/logo_white.png" alt="logo in white color">
+        <img (click)="openMenu()" class="menu" src="assets/img/menu.png" alt="menu">
+        <div id="res-menu" class="nav">
+            <a (click)="closeMenu()" routerLink="/" class="active">HOME</a>
+            <a (click)="closeMenu()" href="#skills">SKILLS</a>
+            <a (click)="closeMenu()" href="#projects">PROJECTS</a>
+            <a (click)="closeMenu()" href="#about">ABOUT</a>
         </div>
     </div>
 </header>

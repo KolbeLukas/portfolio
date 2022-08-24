@@ -14,8 +14,14 @@ header {
     max-width: 1000px;
     padding-inline: 24px;
 
-    img {
+    .logo {
         height: 35px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        height: 20px;
         cursor: pointer;
     }
 
@@ -23,6 +29,7 @@ header {
         color: #ffffff;
         text-decoration: none;
         margin-left: 40px;
+        background-color: #000000;
 
         &:hover {
             color: #FA2759;
@@ -31,5 +38,30 @@ header {
 
     .active {
         color: #FA2759;
+    }
+}
+
+@media (max-width: 650px) {
+    .content {
+        .menu {
+            display: block;
+        }
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 24px;
+        top: 85px;
+        text-align: end;
+        height: 0px;
+        overflow: hidden;
+        transition: height .3s ease-in-out;
+    }
+
+    .responsive {
+        height: 80px;
+        transition: height .3s ease-in-out;
     }
 }
