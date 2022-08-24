@@ -9,6 +9,10 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { ContactComponent } from './contact/contact.component';
     SkillsComponent,
     ProjectsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    ImprintComponent,
+    MainPageComponent,
+    LegalNoticeComponent
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,7 @@ header {
 
     img {
         height: 35px;
+        cursor: pointer;
     }
 
     a {
@@ -26,5 +27,9 @@ header {
         &:hover {
             color: #FA2759;
         }
+    }
+
+    .active {
+        color: #FA2759;
     }
 }
