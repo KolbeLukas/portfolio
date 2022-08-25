@@ -1,7 +1,6 @@
 .container {
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: white;
 }
 
@@ -14,12 +13,12 @@
     align-items: center;
 
     .left {
-        color: #a7a7a7;
+        color: rgb(167, 167, 167);
 
         a {
             text-decoration: none;
             margin-inline: 6px;
-            color: #a7a7a7;
+            color: rgb(167, 167, 167);
         }
     }
 

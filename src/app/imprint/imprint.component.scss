@@ -1,13 +1,12 @@
 .container {
     display: flex;
     justify-content: center;
-    width: 100%;
     min-height: calc(100vh - 264px);
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .content {
-    color: white;
+    color: rgb(255, 255, 255);
     max-width: 1000px;
     padding: 60px 20px;
     display: flex;
@@ -21,7 +20,7 @@
     }
 
     a {
-        color: #2DFCD8;
+        color: rgb(45, 252, 216);
     }
 }
 

@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { ArrowAnimationComponent } from './arrow-animation/arrow-animation.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     FooterComponent,
     ImprintComponent,
     MainPageComponent,
-    LegalNoticeComponent
+    LegalNoticeComponent,
+    ArrowAnimationComponent
   ],
   imports: [
     BrowserModule,
