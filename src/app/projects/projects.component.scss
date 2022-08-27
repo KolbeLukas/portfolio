@@ -15,26 +15,51 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
 
-    button {
-        width: 100px;
+.center {
+    position: relative;
+    margin: 0 4px 8px 4px;
+
+    .btn {
+        width: 120px;
         height: 50px;
-        margin: 0 4px 8px 4px;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        border: 1px solid rgb(250, 39, 89);
         cursor: pointer;
-        transition: background-color 50ms ease-in-out;
+        background: transparent;
+        border: 1px solid rgb(250, 39, 89);
+        outline: none;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        transition: 500ms ease-in-out;
 
         &:hover {
-            background-color: rgb(250, 39, 89);
+            transition: 500ms ease-in-out;
+            background: rgba(250, 39, 89, 0.5);
+        }
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 120px;
+            height: 50px;
+            fill: none;
+            stroke: rgb(255, 255, 255);
+            stroke-dasharray: 139 575;
+            stroke-dashoffset: 139;
+            transition: 500ms ease-in-out;
+
+            &:hover {
+                stroke-dashoffset: -575;
+            }
         }
     }
 
     .active {
-        background-color: rgb(250, 39, 89);
+        background-color: rgba(250, 39, 89, 0.5);
     }
 }
+
 
 .content {
     display: flex;
@@ -45,7 +70,7 @@ h2 {
     margin-bottom: 57.5px;
 
     .box {
-        
+
         background-size: cover;
         background-position: center;
         width: 350px;
@@ -78,10 +103,12 @@ h2 {
         justify-content: space-between;
         align-items: center;
         opacity: 0;
-        transition: all 125ms ease-in-out;
+        transition: all 500ms ease-in-out;
+        
 
         &:hover {
             opacity: 1;
+            transition: all 125ms ease-in-out;
         }
 
         h3 {
@@ -92,23 +119,13 @@ h2 {
             text-align: center;
         }
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 50px;
-            margin-inline: 4px;
-            background-color: rgb(255, 255, 255);
+        .btn {
             color: rgb(250, 39, 89);
-            border: 1px solid rgb(250, 39, 89);
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 50ms ease-in-out;
+            border: 2px solid rgb(250, 39, 89);
+            font-weight: 600;
 
             &:hover {
-                background-color: rgb(250, 39, 89);
-                color: rgb(255, 255, 255);
+                color: white;
             }
         }
     }

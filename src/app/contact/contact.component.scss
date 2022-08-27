@@ -36,6 +36,10 @@ form {
         color: #ffffff;
         font-weight: 600;
         padding-bottom: 15px;
+
+        span {
+            color: rgb(250, 39, 89);
+        }
     }
 
     input {
@@ -56,7 +60,7 @@ form {
     }
 
     textarea {
-        background-color: rgb(26, 26, 26); 
+        background-color: rgb(26, 26, 26);
         border: none;
         padding: 12px;
         color: rgb(255, 255, 255);
@@ -78,16 +82,42 @@ form {
         justify-content: flex-end;
         margin-top: 15px;
 
-        button {
-            background-color: rgb(0, 0, 0);
-            color: rgb(45, 252, 216);
-            border: 1px solid rgb(45, 252, 216);
-            padding: 15px 40px;
-            cursor: pointer;
+        .center {
+            position: absolute;
 
-            &:hover {
-                background-color: rgb(45, 252, 216);
-                color: rgb(0, 0, 0);
+            .btn {
+                width: 120px;
+                height: 50px;
+                cursor: pointer;
+                background: transparent;
+                border: 1px solid rgb(45, 252, 216);
+                outline: none;
+                color: rgb(45, 252, 216);
+                font-size: 17px;
+                transition: 500ms ease-in-out;
+
+                &:hover {
+                    transition: 500ms ease-in-out;
+                    background: rgba(45, 252, 217, 0.5);
+                    color: rgb(255, 255, 255);
+                }
+
+                svg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 120px;
+                    height: 50px;
+                    fill: none;
+                    stroke: rgb(255, 255, 255);
+                    stroke-dasharray: 139 575;
+                    stroke-dashoffset: 139;
+                    transition: 500ms ease-in-out;
+
+                    &:hover {
+                        stroke-dashoffset: -575;
+                    }
+                }
             }
         }
     }
