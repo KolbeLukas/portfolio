@@ -1,8 +1,15 @@
 <header>
     <div class="content">
         <img class="logo" routerLink="/" src="assets/img/logo_white.png" alt="logo in white color">
-        <img (click)="openMenu()" class="menu" src="assets/img/menu.png" alt="menu">
-        <div id="res-menu" class="nav">
+        <div (click)="openMenu()" class="nav-container">
+            <input type="checkbox" [checked]="false" id="checkbox">
+            <div>
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </div>
+        <div id="menu" class="menu">
             <a (click)="closeMenu()" routerLink="/" class="active">HOME</a>
             <a (click)="closeMenu()" href="#skills">SKILLS</a>
             <a (click)="closeMenu()" href="#projects">PROJECTS</a>

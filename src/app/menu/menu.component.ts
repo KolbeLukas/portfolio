@@ -7,22 +7,24 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
   openMenu() {
-    let menu = document.getElementById('res-menu');
+    let menu = document.getElementById('menu');
 
-    if (menu?.className === "nav") {
+    if (menu?.className === "menu") {
       menu.className += " responsive";
     } else {
       if (menu) {
-        menu.className = "nav";
+        menu.className = "menu";
       }
     }
   }
 
   closeMenu() {
-    let menu = document.getElementById('res-menu');
+    let menu = document.getElementById('menu');
+    let nav = document.getElementById('checkbox') as HTMLInputElement | null;
 
-    if (menu) {
-      menu.className = "nav";
+    if (menu && nav) {
+      menu.className = "menu";
+      nav.checked = false;
     }
   }
 }
