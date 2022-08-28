@@ -14,6 +14,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { ArrowAnimationComponent } from './arrow-animation/arrow-animation.component';
+import { LandingPageBgComponent } from './landing-page-bg/landing-page-bg.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ArrowAnimationComponent } from './arrow-animation/arrow-animation.compo
     ImprintComponent,
     MainPageComponent,
     LegalNoticeComponent,
-    ArrowAnimationComponent
+    ArrowAnimationComponent,
+    LandingPageBgComponent
   ],
   imports: [
     BrowserModule,

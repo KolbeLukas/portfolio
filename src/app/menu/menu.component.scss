@@ -53,15 +53,20 @@ header {
         flex-direction: column;
         position: absolute;
         right: 24px;
-        top: 85px;
+        top: 70px;
+        z-index: 1;
         text-align: end;
         height: 0px;
         overflow: hidden;
         transition: height .3s ease-in-out;
+
+        a {
+            padding: 5px 0px;
+        }
     }
 
     .responsive {
-        height: 80px;
+        height: 120px;
         transition: height .3s ease-in-out;
     }
 }

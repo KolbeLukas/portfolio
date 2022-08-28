@@ -84,19 +84,23 @@ h2 {
     }
 
     .project2 {
-        background-image: url('/assets/img/project2.png');
+        background-image: url('/assets/img/project2.jpg');
     }
 
     .project3 {
-        background-image: url('/assets/img/project3.jpg');
+        background-image: url('/assets/img/project3.png');
+    }
+
+    .project4 {
+        background-image: url('/assets/img/project4.jpg');
     }
 
 
     .overlay {
-        width: 100%;
+        width: calc(100% - 40px);
         height: calc(100% - 140px);
-        padding: 70px 0;
-        background-color: rgba(255, 255, 255, 0.8);
+        padding: 70px 20px;
+        background-color: rgba(255, 255, 255, 0.9);
         border-radius: 2px;
         display: flex;
         flex-direction: column;
