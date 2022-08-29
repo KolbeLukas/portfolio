@@ -27,6 +27,7 @@
             height: 60px;
             width: 60px;
             margin-inline: 20px;
+            transition: all 75ms ease-in-out;
 
             &:hover {
                 transform: scale(1.1);
