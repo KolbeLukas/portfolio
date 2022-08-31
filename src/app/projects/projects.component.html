@@ -2,7 +2,7 @@
     <h2 data-aos="zoom-in">My work</h2>
     <div class="nav" data-aos="zoom-in">
         <div class="center">
-            <button (click)="setFilter(0)" class="btn filter active">
+            <button (click)="showProjects(0)" [class.active]="all" class="btn filter">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -11,7 +11,7 @@
             </button>
         </div>
         <div class="center">
-            <button (click)="setFilter(1)" class="btn filter">
+            <button (click)="showProjects(1)" [class.active]="angular" class="btn filter">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -20,7 +20,7 @@
             </button>
         </div>
         <div class="center">
-            <button (click)="setFilter(2)" class="btn filter">
+            <button (click)="showProjects(2)" [class.active]="javascript" class="btn filter">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />

@@ -6,25 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
+  menuOpen:boolean = false;
+  
   openMenu() {
-    let menu = document.getElementById('menu');
-
-    if (menu?.className === "menu") {
-      menu.className += " responsive";
+    if (!this.menuOpen) {
+      this.menuOpen = true;
     } else {
-      if (menu) {
-        menu.className = "menu";
-      }
+      this.menuOpen = false;
     }
   }
 
   closeMenu() {
-    let menu = document.getElementById('menu');
-    let nav = document.getElementById('checkbox') as HTMLInputElement | null;
-
-    if (menu && nav) {
-      menu.className = "menu";
-      nav.checked = false;
-    }
+    this.menuOpen = false;
   }
 }

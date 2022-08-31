@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,26 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  filter = document.getElementsByClassName('filter');
-  all = true;
-  javascript = false;
-  angular = false;
-
-  setFilter(x: number) {
-    for (let i = 0; i < this.filter.length; i++) {
-      const element = this.filter[i];
-      if (element.classList.contains('active')) {
-        element.classList.remove('active');
-      }
-    }
-    this.filter[x].classList.add('active');
-    this.showProjects(x);
-  }
+  all: boolean = true;
+  javascript: boolean = false;
+  angular: boolean = false;
 
   showProjects(x: number) {
     this.all = false;
     this.angular = false;
     this.javascript = false;
+    
     if (x == 0) {
       this.all = true;
     }
