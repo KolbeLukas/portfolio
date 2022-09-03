@@ -2,7 +2,7 @@
     <h2 data-aos="zoom-in">My work</h2>
     <div class="nav" data-aos="zoom-in">
         <div class="center">
-            <button (click)="showProjects(0)" [class.active]="all" class="btn filter">
+            <button (click)="showProjects(0)" [class.active]="all" class="btn">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -11,7 +11,7 @@
             </button>
         </div>
         <div class="center">
-            <button (click)="showProjects(1)" [class.active]="angular" class="btn filter">
+            <button (click)="showProjects(1)" [class.active]="angular" class="btn">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -20,7 +20,7 @@
             </button>
         </div>
         <div class="center">
-            <button (click)="showProjects(2)" [class.active]="javascript" class="btn filter">
+            <button (click)="showProjects(2)" [class.active]="javascript" class="btn">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -32,9 +32,9 @@
     <div class="content">
         <div *ngIf="javascript || all" class="box project1" data-aos="zoom-in">
             <div class="overlay">
-                <h3>Pokedex</h3>
+                <h3>Pokédex</h3>
                 <span>Build with a PokéAPI and JavaScript.</span>
-                <a href="https://lukas-kolbe.developerakademie.net/pokedex/index.html" target="_blank">
+                <a href="https://pokedex.lukas-kolbe-dev.de/" target="_blank">
                     <div class="center">
                         <button class="btn">
                             <svg viewBox="0 0 120 50" class="border">
@@ -51,7 +51,7 @@
             <div class="overlay">
                 <h3>Join</h3>
                 <span>Kanban board developed in a small SCRUM-team.</span>
-                <a href="https://lukas-kolbe.developerakademie.net/join/index.html" target="_blank">
+                <a href="https://join.lukas-kolbe-dev.de/" target="_blank">
                     <div class="center">
                         <button class="btn">
                             <svg viewBox="0 0 120 50" class="border">
@@ -68,7 +68,7 @@
             <div class="overlay">
                 <h3>El Pollo Loco</h3>
                 <span>JavaScript-based jump and run game.</span>
-                <a href="https://lukas-kolbe.developerakademie.net/elpolloloco/index.html" target="_blank">
+                <a href="https://el-pollo-loco.lukas-kolbe-dev.de/" target="_blank">
                     <div class="center">
                         <button class="btn">
                             <svg viewBox="0 0 120 50" class="border">
@@ -85,7 +85,7 @@
             <div class="overlay">
                 <h3>Portfolio</h3>
                 <span>Build with Angular.</span>
-                <a href="https://lukas-kolbe.developerakademie.net/index.html" target="_blank">
+                <a href="/" target="_blank">
                     <div class="center">
                         <button class="btn">
                             <svg viewBox="0 0 120 50" class="border">
