@@ -1,12 +1,13 @@
 <div id="skills" class="container">
     <h2 data-aos="zoom-in">MY Skills</h2>
     <div class="content">
-        <div *ngFor="let skill of ['Angular', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'SCSS', 'Git', 'Rest-API', 'SCRUM', '', '']"
-            class="box" data-aos="zoom-in">
+        <div *ngFor="let skill of ['JavaScript', 'Angular', 'HTML', 'CSS', 'Git', 'Rest-API', 'SCRUM', 'Firebase'];
+            let i = index;" class="box" data-aos="zoom-in">
             <div>
-                <img src="assets/img/{{ skill }}.png" alt="{{ skill }}">
+                <img src="assets/img/skills/{{ skill }}.png" alt="{{ skill }}">
             </div>
             <span>{{ skill }}</span>
+            <span *ngIf="skillExtension[i] != ''">{{ skillExtension[i] }}</span>
         </div>
     </div>
 </div>

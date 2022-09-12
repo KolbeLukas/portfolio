@@ -15,6 +15,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { ArrowAnimationComponent } from './arrow-animation/arrow-animation.component';
 import { LandingPageBgComponent } from './landing-page-bg/landing-page-bg.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,11 +32,13 @@ import { LandingPageBgComponent } from './landing-page-bg/landing-page-bg.compon
     MainPageComponent,
     LegalNoticeComponent,
     ArrowAnimationComponent,
-    LandingPageBgComponent
+    LandingPageBgComponent    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

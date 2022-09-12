@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,43 +81,61 @@ form {
     .submit {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         margin-top: 15px;
 
-        .center {
-            position: absolute;
+        .popup {
+            color: rgb(45, 252, 216);
+            border: 1px solid rgb(45, 252, 216);
+            background-color: rgba(45, 252, 216, 0.2);
+            padding: 14.5px 20px;
+            margin-right: 30px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s linear;
 
-            .btn {
+            @media (max-width: 432px) {
+                position: absolute;
+                bottom: 146px;
+                margin-right: unset;
+            }
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+        button {
+            width: 120px;
+            height: 50px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid rgb(45, 252, 216);
+            outline: none;
+            color: rgb(45, 252, 216);
+            font-size: 17px;
+            transition: 500ms ease-in-out;
+
+            &:hover {
+                transition: 500ms ease-in-out;
+                background: rgba(45, 252, 217, 0.5);
+                color: rgb(255, 255, 255);
+            }
+
+            svg {
+                position: absolute;
+                left: 0;
+                top: 0;
                 width: 120px;
                 height: 50px;
-                cursor: pointer;
-                background: transparent;
-                border: 1px solid rgb(45, 252, 216);
-                outline: none;
-                color: rgb(45, 252, 216);
-                font-size: 17px;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-dasharray: 139 575;
+                stroke-dashoffset: 139;
                 transition: 500ms ease-in-out;
 
                 &:hover {
-                    transition: 500ms ease-in-out;
-                    background: rgba(45, 252, 217, 0.5);
-                    color: rgb(255, 255, 255);
-                }
-
-                svg {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 120px;
-                    height: 50px;
-                    fill: none;
-                    stroke: rgb(255, 255, 255);
-                    stroke-dasharray: 139 575;
-                    stroke-dashoffset: 139;
-                    transition: 500ms ease-in-out;
-
-                    &:hover {
-                        stroke-dashoffset: -575;
-                    }
+                    stroke-dashoffset: -575;
                 }
             }
         }

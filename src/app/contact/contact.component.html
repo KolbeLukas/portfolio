@@ -4,18 +4,22 @@
         <span data-aos="zoom-in">Get in touch via the form below, or by emailing
             <a href="mailto:hello@lukas.de">contact@lukas-kolbe-dev.de</a>
         </span>
-        <form action="https://lukas-kolbe-dev.de/send_mail/send_mail.php" method="post">
+        <form (submit)="sendMail()" ngNativeValidate #myForm>
             <label data-aos="zoom-in" for="name">Name<span>*</span></label>
-            <input data-aos="zoom-in" required type="text" name="name" id="name" placeholder="Enter your name">
+            <input data-aos="zoom-in" required type="text" name="name" #nameField placeholder="Enter your name">
             <label data-aos="zoom-in" for="email-address">Email address<span>*</span></label>
-            <input data-aos="zoom-in" required type="email" name="email-address" id="email-address" placeholder="Enter your Email address">
+            <input data-aos="zoom-in" required type="email" name="email-address" #emailField
+                placeholder="Enter your Email address">
             <label data-aos="zoom-in" for="message">Message<span>*</span></label>
-            <textarea data-aos="zoom-in" required name="message" id="message" cols="30" rows="10"
+            <textarea data-aos="zoom-in" required name="message" cols="30" rows="10" #messageField
                 placeholder="Enter your message"></textarea>
             <div class="submit">
-                <div data-aos="zoom-in" class="center">
-                    <button type="submit" class="btn">
-                        <svg viewBox="0 0 120 50" class="border">
+                <div class="popup" [class.visible]="send">
+                    Message send successfully.
+                </div>
+                <div data-aos="zoom-in">
+                    <button type="submit" #sendButton>
+                        <svg viewBox="0 0 120 50">
                             <polyline points="119,1 119,49 1,49 1,1 119,1" />
                             <polyline points="119,1 119,49 1,49 1,1 119,1" />
                         </svg>
@@ -26,3 +30,4 @@
         </form>
     </div>
 </div>
+
