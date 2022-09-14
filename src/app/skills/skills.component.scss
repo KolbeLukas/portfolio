@@ -19,7 +19,7 @@ h2 {
 }
 
 .box {
-    width: calc(33% - 40px);
+    width: calc(33% - 60px);
     height: 130px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -28,6 +28,7 @@ h2 {
     align-items: center;
     border-radius: 6px;
     margin: 0 20px 77.5px 20px;
+    padding-inline: 10px;
 
     div {
         position: absolute;
