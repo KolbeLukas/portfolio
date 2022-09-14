@@ -10,18 +10,18 @@ export class ProjectsComponent {
   javascript: boolean = false;
   angular: boolean = false;
 
-  showProjects(x: number) {
+  showProjects(x: string) {
     this.all = false;
     this.angular = false;
     this.javascript = false;
-    
-    if (x == 0) {
+
+    if (x == 'all') {
       this.all = true;
     }
-    if (x == 1) {
+    if (x == 'angular') {
       this.angular = true;
     }
-    if (x == 2) {
+    if (x == 'javascript') {
       this.javascript = true;
     }
   }

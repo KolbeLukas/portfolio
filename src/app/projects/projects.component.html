@@ -2,7 +2,7 @@
     <h2 data-aos="zoom-in">My work</h2>
     <div class="nav" data-aos="zoom-in">
         <div class="center">
-            <button (click)="showProjects(0)" [class.active]="all" class="btn">
+            <button (click)="showProjects('all')" [class.active]="all" class="btn">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -11,7 +11,7 @@
             </button>
         </div>
         <div class="center">
-            <button (click)="showProjects(1)" [class.active]="angular" class="btn">
+            <button (click)="showProjects('angular')" [class.active]="angular" class="btn">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -20,7 +20,7 @@
             </button>
         </div>
         <div class="center">
-            <button (click)="showProjects(2)" [class.active]="javascript" class="btn">
+            <button (click)="showProjects('javascript')" [class.active]="javascript" class="btn">
                 <svg viewBox="0 0 120 50" class="border">
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
                     <polyline points="119,1 119,49 1,49 1,1 119,1" />
@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="content">
-        <div *ngIf="javascript || all" class="box project1" data-aos="zoom-in">
+        <div *ngIf="javascript || all" class="box project0" data-aos="zoom-in">
             <div class="overlay">
                 <h3>Pokédex</h3>
                 <span>Build with a PokéAPI and JavaScript.</span>
@@ -47,7 +47,7 @@
                 </a>
             </div>
         </div>
-        <div *ngIf="javascript || all" class="box project2" data-aos="zoom-in">
+        <div *ngIf="javascript || all" class="box project1" data-aos="zoom-in">
             <div class="overlay">
                 <h3>Join</h3>
                 <span>Kanban board developed in a small SCRUM-team.</span>
@@ -64,7 +64,7 @@
                 </a>
             </div>
         </div>
-        <div *ngIf="javascript || all" class="box project3" data-aos="zoom-in">
+        <div *ngIf="javascript || all" class="box project2" data-aos="zoom-in">
             <div class="overlay">
                 <h3>El Pollo Loco</h3>
                 <span>Objectoriented, JavaScript-based jump and run game.</span>
@@ -81,7 +81,7 @@
                 </a>
             </div>
         </div>
-        <div *ngIf="angular || all" class="box project4" data-aos="zoom-in">
+        <div *ngIf="angular || all" class="box project3" data-aos="zoom-in">
             <div class="overlay">
                 <h3>Portfolio</h3>
                 <span>Angular-based Webpage.</span>
@@ -98,7 +98,7 @@
                 </a>
             </div>
         </div>
-        <div *ngIf="angular || all" class="box project5" data-aos="zoom-in">
+        <div *ngIf="angular || all" class="box project4" data-aos="zoom-in">
             <div class="overlay">
                 <h3>Ring of Fire</h3>
                 <span>Angular-based cardgame with a Firebase database.</span>

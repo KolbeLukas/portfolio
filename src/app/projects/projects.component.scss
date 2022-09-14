@@ -78,12 +78,16 @@ h2 {
         border-radius: 2px;
     }
 
+    .project0 {
+        background-image: url('/assets/img/project0.png');
+    }
+
     .project1 {
-        background-image: url('/assets/img/project1.png');
+        background-image: url('/assets/img/project1.jpg');
     }
 
     .project2 {
-        background-image: url('/assets/img/project2.jpg');
+        background-image: url('/assets/img/project2.png');
     }
 
     .project3 {
@@ -92,10 +96,6 @@ h2 {
 
     .project4 {
         background-image: url('/assets/img/project4.png');
-    }
-
-    .project5 {
-        background-image: url('/assets/img/project5.png');
     }
 
 
@@ -112,7 +112,7 @@ h2 {
         align-items: center;
         opacity: 0;
         transition: all 500ms ease-in-out;
-        
+
 
         &:hover {
             opacity: 1;
