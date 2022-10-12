@@ -30,6 +30,9 @@ p {
 
     img {
         height: 200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: -35px;
         border-radius: 100%;
     }
 
