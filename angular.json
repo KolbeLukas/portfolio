@@ -29,7 +29,8 @@
             ],
             "styles": [
               "node_modules/aos/dist/aos.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/fonts.scss"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js"

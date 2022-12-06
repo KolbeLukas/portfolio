@@ -105,12 +105,14 @@ header {
         top: 70px;
         z-index: 1;
         text-align: end;
+        background-color: #000000;
         height: 0px;
         overflow: hidden;
         transition: height .3s ease-in-out;
 
         a {
             padding: 5px 0px;
+            margin-left: 24px;
         }
     }
 
