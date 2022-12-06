@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImprintComponent } from './imprint.component';
+import { DataProtectionComponent } from './data-protection.component';
 
-describe('ImprintComponent', () => {
-  let component: ImprintComponent;
-  let fixture: ComponentFixture<ImprintComponent>;
+describe('DataProtectionComponent', () => {
+  let component: DataProtectionComponent;
+  let fixture: ComponentFixture<DataProtectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImprintComponent ]
+      declarations: [ DataProtectionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ImprintComponent);
+    fixture = TestBed.createComponent(DataProtectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
