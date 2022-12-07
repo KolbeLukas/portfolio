@@ -10,10 +10,10 @@
             </div>
         </div>
         <div class="menu" [class.responsive]="menuOpen">
-            <a (click)="closeMenu()" routerLink="/" class="active">HOME</a>
-            <a (click)="closeMenu()" href="#skills">SKILLS</a>
-            <a (click)="closeMenu()" href="#projects">PROJECTS</a>
-            <a (click)="closeMenu()" href="#about">ABOUT</a>
+            <a (click)="closeMenu()" class="active">HOME</a>
+            <a (click)="closeMenu('skills')">SKILLS</a>
+            <a (click)="closeMenu('projects')">PROJECTS</a>
+            <a (click)="closeMenu('about')">ABOUT</a>
         </div>
     </div>
 </header>

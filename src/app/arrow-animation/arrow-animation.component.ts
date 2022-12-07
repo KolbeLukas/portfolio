@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./arrow-animation.component.scss']
 })
 export class ArrowAnimationComponent {
+
+  constructor(public scroller: ViewportScroller) { }
 }

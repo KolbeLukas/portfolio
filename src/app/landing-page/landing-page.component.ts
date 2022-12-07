@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
+
+  constructor(public scroller: ViewportScroller) { }
 }
