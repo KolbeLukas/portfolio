@@ -2,12 +2,10 @@ $base: 10px;
 
 .arrow-container {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    height: 100px;
+    left: calc(50% - 17.5px);
+    bottom: 85px;
+    height: 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     .click {
@@ -74,11 +72,5 @@ $base: 10px;
             opacity: 0;
             transform: translateY($base * 8) scale(0.5);
         }
-    }
-}
-
-@media (max-width: 650px) {
-    .arrow-container {
-        bottom: 30px;
     }
 }

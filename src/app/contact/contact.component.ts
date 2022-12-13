@@ -11,7 +11,7 @@ export class ContactComponent {
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
-  send:boolean = false;
+  send: boolean = false;
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
